@@ -76,4 +76,27 @@ time.icon span
   .grid {
     flex-direction: column;
   }
+  .subscribeYoutube {
+    display: none;
+  }
+}
+.subscribeYoutube {
+  background-color: #155592;
+  width: 200px;
+  border-radius: 10px;
+  padding: 10px 10px 15px;
+  color: #fff;
+  font-size: 12px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.subscribeYoutube a{
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  color: white;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  text-decoration: none;
 }
