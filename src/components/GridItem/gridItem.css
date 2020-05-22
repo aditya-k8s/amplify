@@ -4,9 +4,19 @@
     justify-content: center;
     align-items: center;
     display: flex;
+    transition: 0.3s;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.gridItem a {
+    width: 100%;
+    transition: 0.3s;
+    vertical-align: center;
+}
+.gridItem:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .gridItem a.border{
-    width: 100%;
     border-right: 1px solid #ccc;
 }
 .gridItem i {

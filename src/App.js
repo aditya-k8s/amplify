@@ -14,6 +14,10 @@ function App() {
           Hello Everyone. <span aria-label="wave" role="img">👋</span>
         </p>*/}
         <div className="grid">
+          <div className="subscribeYoutube">
+            <p>Due to COVID-19 outbreak, we move all of our meetups online.<br /> Please subscribe to our Youtube channel for updates.</p>
+            <a href="https://www.youtube.com/channel/UCebZQVd6GoLtf6Y1uGlqKcQ" target="_blank"><i className="fab fa-youtube"></i> Devtalks India</a>
+          </div>
           <Section>
             <h4>Past Events</h4>
             <List title="Live React Coding" description="on 16th May 2020 by Sarab" />
