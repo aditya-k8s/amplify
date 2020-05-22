@@ -1,0 +1,14 @@
+.list{
+ border-bottom: 1px solid #ccc;
+    padding: 10px 0 20px;
+    text-align: left;
+}
+.list h5{
+    margin: 10px 0 5px;
+}
+.list p{
+    font-style: italic;
+    color: #2f2f2f;
+    font-size: 0.5em;
+    margin: 0;
+}
