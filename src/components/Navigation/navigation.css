@@ -1,0 +1,15 @@
+.link {
+    text-decoration: none;
+    color: #222;
+    padding: 0 30px;
+}
+.navigation {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-top: 10px;
+}
+.navigation-small {
+
+}
