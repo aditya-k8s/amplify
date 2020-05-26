@@ -1,9 +1,10 @@
 import React from 'react';
-import './gridItem.css';
+import { styles } from './styles';
 
-const GridItem = ({ icon, link, className }) => {
+const GridItem = ({ icon, link, className, customStyles = {} }) => {
+  const classes = styles(customStyles);
   return (
-      <div className="gridItem">
+      <div className={classes.gridItem}>
         <a className={className} href={link} target="_blank"><i className={`${icon} fab`} /></a>
       </div>
     );
