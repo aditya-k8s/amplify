@@ -17,7 +17,7 @@ function App() {
         </p>*/}
         <div className="grid">
           <div className="subscribeYoutube">
-            <p>Due to COVID-19 outbreak, we move all of our meetups online.<br /> Please subscribe to our Youtube channel for updates.</p>
+            <p>Due to COVID-19 outbreak we have moved all of our meetups online.<br /> Please subscribe to our YouTube channel for updates and sessions</p>
             <a href="https://www.youtube.com/channel/UCebZQVd6GoLtf6Y1uGlqKcQ" target="_blank"><i className="fab fa-youtube"></i> Devtalks India</a>
           </div>
           <Section>
