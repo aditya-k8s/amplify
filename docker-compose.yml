@@ -6,4 +6,4 @@ services:
       dockerfile: Dockerfile
     image: devtalks:0.41
     ports:
-      - 8080:80
+      - 8101:8080
