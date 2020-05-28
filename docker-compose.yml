@@ -1,0 +1,9 @@
+version: "3"
+services:
+  devtalks:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: devtalks:0.41
+    ports:
+      - 8080:80
