@@ -20,15 +20,16 @@ function App() {
           </div>
           <Section>
             <h4>Past Events</h4>
-            <List title="Live React Coding" description="on 16th May 2020 by Sarab" />
+        {/* <List title="Live React Coding" description="on 16th May 2020 by Sarab" /> */}
             <List title="Git Basics+ and Docker" description="on 18th April 2020 by Jagdeep" />
             <List title="Git Basics" description="on 11th April 2020 by Tarun" />
+            <List title="Redux Intro" description="on 23th May 2020 by Tarun" />
           </Section>
           <Section>
             <h4>Upcoming Events</h4>
-            <List title="Redux Intro" description="on 23th May 2020 by Tarun" />
             <List title="Getting Started with Flutter" description="on 30th May 2020 by Abhishek" />
             <List title="Swift App development" description="on 06th June 2020 by Yatin" />
+            <List title="Coming Soon" description="Event is yet to be decided." />
           </Section>
           <Section>
             <h4>Social Accounts</h4>
