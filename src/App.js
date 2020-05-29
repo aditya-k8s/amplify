@@ -20,7 +20,7 @@ function App() {
           </div>
           <Section>
             <h4>Past Events</h4>
-        {// <List title="Live React Coding" description="on 16th May 2020 by Sarab" /> }
+        {/* <List title="Live React Coding" description="on 16th May 2020 by Sarab" /> */}
             <List title="Git Basics+ and Docker" description="on 18th April 2020 by Jagdeep" />
             <List title="Git Basics" description="on 11th April 2020 by Tarun" />
             <List title="Redux Intro" description="on 23th May 2020 by Tarun" />
