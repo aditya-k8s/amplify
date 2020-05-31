@@ -19,20 +19,21 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <div className="grid">
           <div className="subscribeYoutube">
-            <p>Due to COVID-19 outbreak we have moved all of our meetups online.<br /> Please subscribe to our YouTube channel for updates and sessions</p>
+            <p>Due to COVID-19 outbreak, we have moved all of our meetups online.<br /> Please subscribe to our Youtube channel for updates.</p>
             <a href="https://www.youtube.com/channel/UCebZQVd6GoLtf6Y1uGlqKcQ" target="_blank"><i className="fab fa-youtube"></i> Devtalks India</a>
           </div>
           <Section>
             <h4>Past Events</h4>
-            <List title="Live React Coding" description="on 16th May 2020 by Sarab" />
+        {/* <List title="Live React Coding" description="on 16th May 2020 by Sarab" /> */}
             <List title="Git Basics+ and Docker" description="on 18th April 2020 by Jagdeep" />
             <List title="Git Basics" description="on 11th April 2020 by Tarun" />
+            <List title="Redux Intro" description="on 23th May 2020 by Tarun" />
           </Section>
           <Section>
             <h4>Upcoming Events</h4>
-            <List title="Redux Intro" description="on 23th May 2020 by Tarun" />
             <List title="Getting Started with Flutter" description="on 30th May 2020 by Abhishek" />
             <List title="Swift App development" description="on 06th June 2020 by Yatin" />
+            <List title="Coming Soon" description="Event is yet to be decided." />
           </Section>
           <Section>
             <h4>Social Accounts</h4>
