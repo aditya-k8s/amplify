@@ -1,18 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
 import logo from './logo.jpeg';
 import Section from "./components/Section/Section";
 import List from "./components/List/List";
 import GridItem from "./components/GridItem/GridItem";
+import Navigation from "./components/Navigation/Navigation";
 
 function App() {
+  useEffect(() => {
+    fetch('https://events.devtalks.in/events')
+      .then(data => data.json())
+      .then(data => console.log('data', data));
+  }, []);
   return (
     <div className="App">
+      <Navigation />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        {/*<p>
-          Hello Everyone. <span aria-label="wave" role="img">👋</span>
-        </p>*/}
         <div className="grid">
           <div className="subscribeYoutube">
             <p>Due to COVID-19 outbreak, we have moved all of our meetups online.<br /> Please subscribe to our Youtube channel for updates.</p>
