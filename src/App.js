@@ -8,7 +8,7 @@ import Navigation from "./components/Navigation/Navigation";
 
 function App() {
   useEffect(() => {
-    fetch('https://devtalks-events-ad2nk4diqq-ew.a.run.app/events')
+    fetch('https://events.devtalks.in/events')
       .then(data => data.json())
       .then(data => console.log('data', data));
   }, []);
