@@ -5,6 +5,20 @@ import './speakers.css';
 
 const speakers = [
   {
+    id: ,
+    name: 'Yatin Mehandiratta',
+    twitter: 'https://twitter.com/iamimpatience',
+    linkedin: '',
+    github: '',
+    personal: '',
+    image: 'https://media-exp1.licdn.com/dms/image/C5603AQFjXKg-NUTvEw/profile-displayphoto-shrink_800_800/0?e=1596672000&v=beta&t=qZR6geKfuxnETKpJ0daRUyFQ_BjdfhFAD5itH7E7CTs',
+    pastEvent: {
+      title: 'Getting started with ActionheroJs',
+      date: '14th June 2020',
+      link: ''
+    },
+  },
+  {
     id: 1,
     name: 'Abhishek Garg',
     twitter: 'https://twitter.com/iamimpatience',
