@@ -5,6 +5,8 @@ import './index.css';
 import App from './App';
 import Speakers from "./pages/Speakers/Speakers";
 import { TransitionGroup, CSSTransition } from 'react-transition-group'
+import Events from "./pages/Events/Events";
+import Contact from "./pages/Contact/Contact";
 
 ReactDOM.render(
     <div style={{ position: 'absolute', top: 0, width: '100%' }}>
@@ -17,7 +19,9 @@ ReactDOM.render(
               classNames='fade'
           >
             <Switch location={location}>
-              <Route component={Speakers} path="/Speakers" />
+              <Route component={Events} path="/events" />
+              <Route component={Contact} path="/contact" />
+              <Route component={Speakers} path="/speakers" />
               <Route component={App} path="/" />
             </Switch>
           </CSSTransition>
