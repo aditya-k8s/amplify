@@ -5,7 +5,7 @@ import './speakers.css';
 
 const speakers = [
   {
-    id: ,
+    id: 8,
     name: 'Yatin Mehandiratta',
     twitter: 'https://twitter.com/iamimpatience',
     linkedin: '',
