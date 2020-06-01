@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import logo from './logo.jpeg';
 import Section from "./components/Section/Section";
@@ -7,10 +7,22 @@ import GridItem from "./components/GridItem/GridItem";
 import Navigation from "./components/Navigation/Navigation";
 
 function App() {
+  const [pastEvents, setPastEvents] = useState([]);
+  const [events, setEvents] = useState([]);
   useEffect(() => {
     fetch('https://events.devtalks.in/events')
       .then(data => data.json())
-      .then(data => console.log('data', data));
+      .then(({data}) => {
+        if (data.events) {
+          const {past = [], upcoming = []} = data.events;
+          setPastEvents(past.reverse().splice(0, 3));
+          setEvents(upcoming.splice(0, 3));
+        }
+      })
+        .catch((err) => {
+          console.error(err);
+        })
+    ;
   }, []);
   return (
     <div className="App">
@@ -24,16 +36,15 @@ function App() {
           </div>
           <Section>
             <h4>Past Events</h4>
-        {/* <List title="Live React Coding" description="on 16th May 2020 by Sarab" /> */}
-            <List title="Git Basics+ and Docker" description="on 18th April 2020 by Jagdeep" />
-            <List title="Git Basics" description="on 11th April 2020 by Tarun" />
-            <List title="Redux Intro" description="on 23th May 2020 by Tarun" />
+            {pastEvents.length > 0 && pastEvents.map((e) => (
+                <List key={e.id} title={e.title} description={`"on ${e.date} by ${e.speaker}`} />
+            ))}
           </Section>
           <Section>
             <h4>Upcoming Events</h4>
-            <List title="Getting Started with Flutter" description="on 30th May 2020 by Abhishek" />
-            <List title="Swift App development" description="on 06th June 2020 by Yatin" />
-            <List title="Coming Soon" description="Event is yet to be decided." />
+            {events.length > 0 && events.map((e) => (
+                <List key={e.id} title={e.title} description={`"on ${e.date} by ${e.speaker}`} />
+            ))}
           </Section>
           <Section>
             <h4>Social Accounts</h4>
