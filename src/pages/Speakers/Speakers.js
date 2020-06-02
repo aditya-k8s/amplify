@@ -71,7 +71,7 @@ const speakers = [
   },
   {
     id: 3,
-    name: 'Varun Sehdev',
+    name: 'Varun Sahdev',
     twitter: '',
     linkedin: '',
     github: '',
