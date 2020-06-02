@@ -96,6 +96,20 @@ const speakers = [
     personal: '',
     image: 'https://pbs.twimg.com/profile_images/515887073392222210/yRj2duXw_400x400.jpeg'
   },
+  {
+    id: 9,
+    name: 'Prashant Puri',
+    twitter: '',
+    linkedin: 'https://linkedin.com/in/prashant-puri/',
+    github: 'https://github.com/04vibs',
+    personal: '',
+    image: 'https://media-exp1.licdn.com/dms/image/C4E03AQHy6u72IePDiw/profile-displayphoto-shrink_400_400/0?e=1596672000&v=beta&t=0QPByfhG871X3pajisElb9h3Q4gbcBP1SySo_OOtE6w',
+    pastEvent: {
+      title: 'Getting started with Angular',
+      date: '20th June 2020',
+      link: 'https://www.meetup.com/DevTalks-India/events/270827439/'
+    },  
+  },
 ];
 
 const Speakers = () => {
