@@ -6,16 +6,16 @@ import './speakers.css';
 const speakers = [
   {
     id: 8,
-    name: 'Yatin Mehandiratta',
-    twitter: 'https://twitter.com/iamimpatience',
-    linkedin: '',
-    github: '',
-    personal: '',
+    name: 'Yatin M.',
+    twitter: 'https://twitter.com/255_255_255_255',
+    linkedin: 'https://www.linkedin.com/in/yatinpy/',
+    github: 'https://github.com/y471n',
+    personal: 'http://yatin.space',
     image: 'https://media-exp1.licdn.com/dms/image/C5603AQFjXKg-NUTvEw/profile-displayphoto-shrink_800_800/0?e=1596672000&v=beta&t=qZR6geKfuxnETKpJ0daRUyFQ_BjdfhFAD5itH7E7CTs',
     pastEvent: {
       title: 'Getting started with ActionheroJs',
       date: '14th June 2020',
-      link: ''
+      link: 'https://www.meetup.com/DevTalks-India/events/270827408/'
     },
   },
   {
