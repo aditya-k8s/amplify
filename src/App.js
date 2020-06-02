@@ -32,7 +32,7 @@ function App() {
         <div className="grid">
           <div className="subscribeYoutube">
             <p>Due to COVID-19 outbreak, we have moved all of our meetups online.<br /> Please subscribe to our Youtube channel for updates.</p>
-            <a href="https://www.youtube.com/channel/UCebZQVd6GoLtf6Y1uGlqKcQ" target="_blank"><i className="fab fa-youtube"></i> Devtalks India</a>
+            <a href="https://www.youtube.com/channel/UCebZQVd6GoLtf6Y1uGlqKcQ" rel="noopener noreferrer" target="_blank"><i className="fab fa-youtube"></i> Devtalks India</a>
           </div>
           <Section>
             <h4>Past Events</h4>
