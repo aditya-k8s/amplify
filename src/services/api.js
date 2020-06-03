@@ -11,8 +11,8 @@ const endpoints = {
 export const api = {
   endpoints,
   async get(type) {
-    return fetch(endpoints.get(type)).then(res => res.json()).then(res => res.data.speakers);
+    return fetch(endpoints.get(type)).then(res => res.json()).then(res => res?.data || {});
   },
 };
 
-export const fetchSpeakers = async () => api.get('speakers');
+export const fetchSpeakers = async () => api.get('speakers').then(res => res?.speakers || []);
