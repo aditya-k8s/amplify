@@ -1,4 +1,18 @@
-export const fetchSpeakers = () => {
-  return fetch('/api/data/speakers.json')
-    .then(res => res.json());
-}
+const base = 'https://api.devtalks.in/';
+
+const endpoints = {
+  base,
+  speakers: 'speakers',
+  get(val) {
+    return `${this.base}${val}`;
+  },
+};
+
+export const api = {
+  endpoints,
+  async get(type) {
+    return fetch(endpoints.get(type)).then(res => res.json()).then(res => res.data.speakers);
+  },
+};
+
+export const fetchSpeakers = async () => api.get('speakers');
