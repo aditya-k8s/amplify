@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { fetchEvents } from './services/api';
 import './App.css';
 import logo from './logo.jpeg';
 import Section from "./components/Section/Section";
@@ -10,14 +11,10 @@ function App() {
   const [pastEvents, setPastEvents] = useState([]);
   const [events, setEvents] = useState([]);
   useEffect(() => {
-    fetch('https://events.devtalks.in/events')
-      .then(data => data.json())
-      .then(({data}) => {
-        if (data.events) {
-          const {past = [], upcoming = []} = data.events;
-          setPastEvents(past.reverse().splice(0, 3));
-          setEvents(upcoming.splice(0, 3));
-        }
+    fetchEvents()
+      .then(({past = [], upcoming = []}) => {
+        setPastEvents(past.reverse().splice(0, 3));
+        setEvents(upcoming.splice(0, 3));
       })
         .catch((err) => {
           console.error(err);
@@ -32,7 +29,7 @@ function App() {
         <div className="grid">
           <div className="subscribeYoutube">
             <p>Due to COVID-19 outbreak, we have moved all of our meetups online.<br /> Please subscribe to our Youtube channel for updates.</p>
-            <a href="https://www.youtube.com/channel/UCebZQVd6GoLtf6Y1uGlqKcQ" target="_blank"><i className="fab fa-youtube"></i> Devtalks India</a>
+            <a href="https://www.youtube.com/channel/UCebZQVd6GoLtf6Y1uGlqKcQ" rel="noopener noreferrer" target="_blank"><i className="fab fa-youtube"></i> Devtalks India</a>
           </div>
           <Section>
             <h4>Past Events</h4>
