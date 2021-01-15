@@ -7,6 +7,11 @@ import Speakers from "./pages/Speakers/Speakers";
 import { TransitionGroup, CSSTransition } from 'react-transition-group'
 import Events from "./pages/Events/Events";
 import Contact from "./pages/Contact/Contact";
+import Login from './pages/Login/Login';
+import Amplify from 'aws-amplify';
+import config from './aws-exports';
+
+Amplify.configure(config);
 
 ReactDOM.render(
     <div style={{ position: 'absolute', top: 0, width: '100%' }}>
@@ -22,6 +27,7 @@ ReactDOM.render(
               <Route component={Events} path="/events" />
               <Route component={Contact} path="/contact" />
               <Route component={Speakers} path="/speakers" />
+              <Route component={Login} path="/login" />
               <Route component={App} path="/" />
             </Switch>
           </CSSTransition>
